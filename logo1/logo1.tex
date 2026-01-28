@@ -1,0 +1,35 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[blue!60!black, >=latex]
+	\node at (0,0) 
+	{\includegraphics[width= 5cm, page = 1]{../background/background.pdf}};
+	\node at (-1.5,0) {\bf \sc\Huge CS};
+	\node [text width=2cm,align=left]  at (1,0) {
+		\sc \small
+		\textcolor{blue!60!black}{Colectivo} \\ 
+		\textcolor{blue!60!black}{Soluciones} \\ 
+		\textcolor{gray}{Universales}
+		};
+
+		\draw [help lines] (-3,-1) grid (3,1);
+		\fill [red] (0,0) circle (2pt);
+
+		\coordinate (A) at (-1.15,0.3) circle (1.2pt);
+		\coordinate (B) at (-1.15,-0.15) circle (1.2pt);
+		\coordinate (C) at (-1,-0.3) circle (1.2pt);
+		\coordinate (D) at (-0.8,-0.3) circle (1.2pt);
+		\coordinate (E) at (-0.65,-0.15) circle (1.2pt);
+		\coordinate (F) at (-0.65,0.3) circle (1.2pt);
+
+		\fill [gray] (A) circle (1.2pt);
+		\fill [gray] (B) circle (1.2pt);
+		\fill [gray] (C) circle (1.2pt);
+		\fill [gray] (D) circle (1.2pt);
+		\fill [gray] (E) circle (1.2pt);
+		\fill [gray] (F) circle (1.2pt);
+
+		\draw [gray, double, ->] (B) -- (A);
+\end{tikzpicture}
+
+\end{document}
